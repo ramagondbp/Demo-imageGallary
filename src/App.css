@@ -1,0 +1,189 @@
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li a {
+	padding: 5px 15px;
+	float: left;
+	border-right: 1px solid #dedede;
+	color: #fff;
+	text-decoration: none;
+}
+
+.main-wrap {
+	clear: both;
+}
+
+ul li:last-child a {
+	border-right: 0;
+}
+
+.App {
+	text-align: center;
+}
+
+h4 {
+	margin: 10px;
+	color: crimson;
+}
+
+h3 {
+	padding: 0px 0 15px 30px;
+	text-align: left;
+	border-bottom: 1px solid #dedede;
+	margin-bottom: 5%;
+	padding: 20px 30px;
+	color: #fff;
+	background: #b5bdc8;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b', GradientType=0);
+	/* IE6-9 */
+}
+
+p {
+	font-size: 14px;
+	text-align: left;
+}
+
+.logo-wrap {
+	text-align: right;
+	float: right;
+}
+
+.App-logo {
+	animation: App-logo-spin infinite 20s linear;
+	height: 25px;
+	width: 50px;
+}
+
+.header-wrap {
+	padding: 20px 0;
+	background-color: #222;
+}
+
+.header-wrap .App-header {
+	background-color: #222;
+	color: white;
+	overflow: hidden;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.App-title {
+	font-size: 1.5em;
+}
+
+.App-intro {
+	font-size: large;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.wrapper {
+	border-radius: 5px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-top: 0;
+	width: 80%;
+	margin: 0 auto 30px;
+	padding: 0;
+	overflow: hidden;
+	-webkit-box-shadow: 6px 12px 23px -1px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 6px 12px 23px -1px rgba(0, 0, 0, 0.75);
+	box-shadow: 6px 12px 23px -1px rgba(0, 0, 0, 0.75);
+	text-align: center;
+}
+
+.wrapper .grid>div {
+	border-radius: 5px;
+	background-color: #fff;
+	padding: 1em;
+	color: #000;
+	margin: 5px 10px 30px;
+	display: inline-block;
+	width: 240px;
+	-webkit-box-shadow: 3px 3px 14px 1px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 3px 3px 14px 1px rgba(0, 0, 0, 0.75);
+	box-shadow: 3px 3px 14px 1px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper .grid>div img {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+}
+
+.wrapper .grid>div:hover {
+	-webkit-box-shadow: 3px 3px 14px 1px rgba(0, 140, 186, 0.5);
+	-moz-box-shadow: 3px 3px 14px 1px rgba(0, 140, 186, 0.5);
+	box-shadow: 3px 3px 14px 1px rgba(0, 140, 186, 0.5);
+}
+
+.wrapper>div:hover {
+	cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+/* Modal Content */
+.modal-content {
+	margin-top: 35px;
+}
+
+.close {
+	color: crimson;
+	float: right;
+	font-size: 40px;
+	font-weight: bold;
+	position: relative;
+	right: 15%;
+	top: -27px;
+}
+
+.close:hover,
+.close:focus {
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal img {
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
+	border: 0;
+	margin: 40px auto;
+}
